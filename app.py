@@ -37,8 +37,8 @@ def main():
   result = sorted(result, key=lambda w: len(w), reverse=True)
 
   for word in result:
-      print(word)
-      st.write(word)
+      # print(word)
+      st.write(word.upper())
 
 
 # main("VOLIE")
