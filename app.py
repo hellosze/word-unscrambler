@@ -49,7 +49,7 @@ def main():
 
 
 letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
-st.button("Generate Unscrambled Words", on_click=main2)
+st.button("Generate Unscrambled Words", on_click=main)
 
 placeholder = st.empty()
 
