@@ -32,11 +32,10 @@ def main():
               result.append(word.lower())
 
   result = sorted(result, key=lambda w: len(w), reverse=True)
-  with st.container():
-    for word in result:
-        # print(word)
-        st.write(word.upper())
-        # placeholder.markdown(word.upper())
+  for word in result:
+      # print(word)
+      st.write(word.upper())
+      # placeholder.markdown(word.upper())
 
 #!/usr/bin/env python3
 
@@ -46,13 +45,13 @@ def main():
 
 # main("VOLIE")
 
+with st.container():
 
-
-letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
-st.button("Generate Unscrambled Words", on_click=main)
-
-placeholder = st.empty()
-
+  letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
+  st.button("Generate Unscrambled Words", on_click=main)
+  
+  # placeholder = st.empty()
+  
 
   
 # st.write("The current movie title is", title)
