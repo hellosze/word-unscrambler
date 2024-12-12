@@ -23,7 +23,7 @@ def can_spell(letters, word):
 
 
 def main():
-  letters = st.session_state.letter_input
+  letters = st.session_state.widget
 
   result = []
   with open('scrabble.txt', 'r') as words_file:
