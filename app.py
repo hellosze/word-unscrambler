@@ -35,8 +35,8 @@ def main():
   with st.container():
     for word in result:
         # print(word)
-        # st.write(word.upper())
-        placeholder.markdown(word.upper())
+        st.write(word.upper())
+        # placeholder.markdown(word.upper())
 
 #!/usr/bin/env python3
 
