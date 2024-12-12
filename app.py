@@ -36,11 +36,16 @@ def main(word):
 
   for word in result:
       print(word)
+      st.write(word)
+
 
 main("VOLIE")
 
-title = st.text_input("Enter Letters", "AEIOU")
-st.write("The current movie title is", title)
+
+
+title = st.text_input("Enter Letters", "AEIOU", on_change=main)
+st.button("Generate Unscrambled Words", on_click=main)
+# st.write("The current movie title is", title)
 
 #USE lowercase if using popular.txt or words.txt
 #USE caps if using scrabble.txt because source words are in caps
