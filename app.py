@@ -1,6 +1,7 @@
 import streamlit as st
 
 st.title("Word Unscrambler")
+unscrambled_words = []
 
 def can_spell(letters, word):
   # reverse sort to get the blanks ('?') to the end of letters string,
@@ -23,7 +24,7 @@ def main():
   letters = st.session_state.widget.upper()
 
   result = []
-  unscrambled_words = []
+
   with open('true-txt.csv', 'r') as words_file:
       for line in words_file:
           word = line.strip()
