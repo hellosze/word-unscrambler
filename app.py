@@ -36,7 +36,7 @@ def main():
     for word in result:
         # print(word)
         # st.write(word.upper())
-        placeholder.write(word.upper())
+        placeholder.markdown(word.upper())
 
 #!/usr/bin/env python3
 
