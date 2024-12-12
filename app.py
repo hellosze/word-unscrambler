@@ -26,7 +26,7 @@ def main():
   letters = st.session_state.widget.upper()
 
   result = []
-  with open('scrabble.txt', 'r') as words_file:
+  with open('true.txt', 'r') as words_file:
       for line in words_file:
           word = line.strip()
           if can_spell(letters, word):
