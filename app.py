@@ -35,7 +35,8 @@ def main():
   with st.container():
     for word in result:
         # print(word)
-        st.write(word.upper())
+        # st.write(word.upper())
+        placeholder.write(word.upper())
 
 #!/usr/bin/env python3
 
@@ -49,6 +50,8 @@ def main():
 
 letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
 st.button("Generate Unscrambled Words", on_click=main)
+
+placeholder = st.empty()
 
 
   
