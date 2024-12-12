@@ -23,6 +23,7 @@ def main():
   letters = st.session_state.widget.upper()
 
   result = []
+  unscrambled_words = []
   with open('true-txt.csv', 'r') as words_file:
       for line in words_file:
           word = line.strip()
@@ -34,8 +35,9 @@ def main():
   result = sorted(result, key=lambda w: len(w), reverse=True)
   for word in result:
       # print(word)
-      st.write(word.upper())
+      # st.write(word.upper())
       # placeholder.markdown(word.upper())
+      unscrambled_words.append(word.upper())
 
 #!/usr/bin/env python3
 
@@ -49,7 +51,7 @@ with st.container():
 
   letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
   st.button("Generate Unscrambled Words", on_click=main)
-  
+st.write(unscrambled_words)  
   # placeholder = st.empty()
   
 
