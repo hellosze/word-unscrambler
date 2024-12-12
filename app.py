@@ -43,7 +43,7 @@ def main():
 
 
 
-letter_input = st.text_input("Enter Letters", "")
+letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
 st.button("Generate Unscrambled Words", on_click=main)
 # st.write("The current movie title is", title)
 
