@@ -22,8 +22,8 @@ def can_spell(letters, word):
 #!/usr/bin/env python3
 
 
-def main(word):
-  letters = word
+def main():
+  letters = st.session_state.letter_input
 
   result = []
   with open('scrabble.txt', 'r') as words_file:
@@ -43,7 +43,7 @@ main("VOLIE")
 
 
 
-title = st.text_input("Enter Letters", "AEIOU", on_change=main)
+letter_input = st.text_input("Enter Letters", "")
 st.button("Generate Unscrambled Words", on_click=main)
 # st.write("The current movie title is", title)
 
