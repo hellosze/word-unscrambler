@@ -35,10 +35,10 @@ def main():
               result.append(word.lower())
 
   result = sorted(result, key=lambda w: len(w), reverse=True)
-
-  for word in result:
-      # print(word)
-      st.write(word.upper())
+  with st.container():
+    for word in result:
+        # print(word)
+        st.write(word.upper())
 
 
 # main("VOLIE")
@@ -47,6 +47,9 @@ def main():
 
 letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
 st.button("Generate Unscrambled Words", on_click=main)
+
+
+  
 # st.write("The current movie title is", title)
 
 #USE lowercase if using popular.txt or words.txt
