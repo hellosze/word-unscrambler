@@ -18,21 +18,6 @@ def can_spell(letters, word):
   return len(word) == 0
 
 
-
-#!/usr/bin/env python3
-
-
-
-
-
-# main("VOLIE")
-
-
-
-letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
-st.button("Generate Unscrambled Words", on_click=main)
-
-
 def main():
   letters = st.session_state.widget.upper()
 
@@ -50,6 +35,21 @@ def main():
     for word in result:
         # print(word)
         st.write(word.upper())
+
+#!/usr/bin/env python3
+
+
+
+
+
+# main("VOLIE")
+
+
+
+letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
+st.button("Generate Unscrambled Words", on_click=main)
+
+
   
 # st.write("The current movie title is", title)
 
