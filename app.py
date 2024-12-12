@@ -1,5 +1,6 @@
 import streamlit as st
 
+st.title("Word Unscrambler")
 
 def can_spell(letters, word):
   # reverse sort to get the blanks ('?') to the end of letters string,
