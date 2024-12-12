@@ -30,7 +30,7 @@ def main():
       for line in words_file:
           word = line.strip()
           if can_spell(letters, word):
-              result.append(word)
+              result.append(word.lower())
 
   result = sorted(result, key=lambda w: len(w), reverse=True)
 
