@@ -68,7 +68,7 @@ if button:
   with open('true-txt.csv', 'r') as words_file:
       for line in words_file:
           word = line.strip()
-          if len(word) == 1:
+          if len(word) == 1 or len(word) == 2:
             continue
           if can_spell(letters, word):
               result.append(word.lower())
