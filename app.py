@@ -54,7 +54,7 @@ def main():
 
 # with st.container():
 
-letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
+letter_input = st.text_input("Enter Letters", key="widget")
 # input_slot.write(letter_input)
 # st.write(letter_input)
 button = st.button("Generate Unscrambled Words")
