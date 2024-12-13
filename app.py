@@ -72,7 +72,6 @@ button = st.button("Generate Unscrambled Words", on_click=main)
 #USE caps if using scrabble.txt because source words are in caps
 
 st.latex(r'''
-    a + ar + a r^2 + a r^3 + \cdots + a r^{n-1} =
-    \sum_{k=0}^{n-1} ar^k =
-    a \left(\frac{1-r^{n}}{1-r}\right)
+    fill rate =
+    a \left(\frac{impressions}{total code served}\right)
     ''')
