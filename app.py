@@ -40,7 +40,8 @@ def main():
   result = sorted(result, key=lambda w: len(w), reverse=True)
   for word in result:
       # print(word)
-      st.write(word.upper())
+      # st.write(word.upper())
+      text_slot.write(word.upper())
       # placeholder.markdown(word.upper())
       # unscrambled_words.append(word.upper())
 
