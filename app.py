@@ -23,7 +23,7 @@ def can_spell(letters, word):
 
   return len(word) == 0
 
-@st.cache_data
+# @st.cache_data
 def main():
   letters = st.session_state.widget.upper()
 
