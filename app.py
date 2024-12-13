@@ -3,7 +3,7 @@ import streamlit as st
 st.title("Word Unscrambler")
 input_slot = st.empty()
 button_slot = st.empty()
-text_slot = st.empty()
+
 
 unscrambled_words = []
 
@@ -23,7 +23,7 @@ def can_spell(letters, word):
 
   return len(word) == 0
 
-
+@st.cache_data
 def main():
   letters = st.session_state.widget.upper()
 
@@ -56,14 +56,15 @@ def main():
 # with st.container():
 
 letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
-input_slot.write(letter_input)
+# input_slot.write(letter_input)
 # st.write(letter_input)
 button = st.button("Generate Unscrambled Words", on_click=main)
   # st.write(button)
   # word_output = st.empty()
   # word_output.text(unscrambled_words)  
   # placeholder = st.empty()
-  
+# words_state = st.text("Generating words")
+# words_state.text(""
 
   
 # st.write("The current movie title is", title)
