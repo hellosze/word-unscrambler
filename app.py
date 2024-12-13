@@ -51,11 +51,11 @@ def main():
 with st.container():
 
   letter_input = st.text_input("Enter Letters", key="widget", on_change=main)
-  st.write(letter_input)
+  # st.write(letter_input)
   button = st.button("Generate Unscrambled Words", on_click=main)
-  st.write(button)
+  # st.write(button)
 word_output = st.empty()
-word_output.write(unscrambled_words)  
+word_output.text(unscrambled_words)  
   # placeholder = st.empty()
   
 
