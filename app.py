@@ -73,5 +73,5 @@ button = st.button("Generate Unscrambled Words", on_click=main)
 
 st.latex(r'''
     \text{Fill Rate} =
-    \left(\frac{\text{Impressions}}{"total code served"}\right)
+    \left(\frac{\text{Impressions}}{"\text{Total Code Served}"}\right)
     ''')
