@@ -29,7 +29,7 @@ def main():
 
   result = []
 
-  with open('true-txt.csv', 'r') as words_file:
+  with open('scrabble.txt', 'r') as words_file:
       for line in words_file:
           word = line.strip()
           if len(word) == 1:
