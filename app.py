@@ -36,9 +36,9 @@ def main():
   result = sorted(result, key=lambda w: len(w), reverse=True)
   for word in result:
       # print(word)
-      # st.write(word.upper())
+      st.write(word.upper())
       # placeholder.markdown(word.upper())
-      unscrambled_words.append(word.upper())
+      # unscrambled_words.append(word.upper())
 
 #!/usr/bin/env python3
 
@@ -54,8 +54,8 @@ with st.container():
   # st.write(letter_input)
   button = st.button("Generate Unscrambled Words", on_click=main)
   # st.write(button)
-  word_output = st.empty()
-  word_output.text(unscrambled_words)  
+  # word_output = st.empty()
+  # word_output.text(unscrambled_words)  
   # placeholder = st.empty()
   
 
