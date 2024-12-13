@@ -54,8 +54,8 @@ with st.container():
   # st.write(letter_input)
   button = st.button("Generate Unscrambled Words", on_click=main)
   # st.write(button)
-word_output = st.empty()
-word_output.text(unscrambled_words)  
+  word_output = st.empty()
+  word_output.text(unscrambled_words)  
   # placeholder = st.empty()
   
 
