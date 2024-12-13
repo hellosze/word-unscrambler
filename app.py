@@ -72,6 +72,6 @@ button = st.button("Generate Unscrambled Words", on_click=main)
 #USE caps if using scrabble.txt because source words are in caps
 
 st.latex(r'''
-    fill rate =
-    a \left(\frac{impressions}{total code served}\right)
+    Fill Rate =
+    \left(\frac{impressions}{"total code served"}\right)
     ''')
