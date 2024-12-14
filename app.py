@@ -93,7 +93,7 @@ if button:
     for word in result_4_letter:
       st.write(word.upper())
   with col3:
-    for word in result_5_letter:
+    for word in result_3_letter:
       st.write(word.upper())
   # for word in result:
       # print(word)
