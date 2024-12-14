@@ -57,7 +57,7 @@ def main():
 letter_input = st.text_input("Enter Letters", key="widget")
 button = st.button("Generate Unscrambled Words")
 
-if button:
+if button  or letter_input:
 
   letters = st.session_state.widget.upper()
 
