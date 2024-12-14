@@ -55,8 +55,6 @@ def main():
 # with st.container():
 
 letter_input = st.text_input("Enter Letters", key="widget")
-# input_slot.write(letter_input)
-# st.write(letter_input)
 button = st.button("Generate Unscrambled Words")
 
 if button:
@@ -64,7 +62,8 @@ if button:
   letters = st.session_state.widget.upper()
 
   result = []
-
+  result_5_letter = []
+  result_3_letter = []
   with open('true-txt.csv', 'r') as words_file:
       for line in words_file:
           word = line.strip()
@@ -72,11 +71,26 @@ if button:
             continue
           if can_spell(letters, word):
               result.append(word.lower())
+          if can_spell(letters, word) and len(word) == 5:
+              result_5_letter.append(word.lower())
+          if can_spell(letters, word) and len(word) == 3:
+                result_3_letter.append(word.lower())
 
   result = sorted(result, key=lambda w: len(w), reverse=True)
-  for word in result:
-      # print(word)
+  result_3_letter = sorted(result_3_letter, key=lambda w: len(w), reverse=True)
+  result_5_letter = sorted(result_5_letter, key=lambda w: len(w), reverse=True)
+
+  col1, col2, col3 = st.columns(3)
+
+  with col1:
+    for word in result_5_letter:
       st.write(word.upper())
+  with col2:
+    for word in result_3_letter:
+      st.write(word.upper())
+  # for word in result:
+      # print(word)
+      # st.write(word.upper())
   # st.write(button)
   # word_output = st.empty()
   # word_output.text(unscrambled_words)  
