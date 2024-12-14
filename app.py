@@ -77,7 +77,7 @@ if button:
           if can_spell(letters, word) and len(word) == 4:
               result_4_letter.append(word.lower())
           if can_spell(letters, word) and len(word) == 3:
-                result_3_letter.append(word.lower())
+              result_3_letter.append(word.lower())
 
   result = sorted(result, key=lambda w: len(w), reverse=True)
   result_3_letter = sorted(result_3_letter, key=lambda w: len(w), reverse=True)
