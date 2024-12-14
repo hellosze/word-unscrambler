@@ -63,6 +63,7 @@ if button:
 
   result = []
   result_5_letter = []
+  result_4_letter = []
   result_3_letter = []
   with open('true-txt.csv', 'r') as words_file:
       for line in words_file:
@@ -73,11 +74,14 @@ if button:
               result.append(word.lower())
           if can_spell(letters, word) and len(word) == 5:
               result_5_letter.append(word.lower())
+          if can_spell(letters, word) and len(word) == 4:
+              result_4_letter.append(word.lower())
           if can_spell(letters, word) and len(word) == 3:
                 result_3_letter.append(word.lower())
 
   result = sorted(result, key=lambda w: len(w), reverse=True)
   result_3_letter = sorted(result_3_letter, key=lambda w: len(w), reverse=True)
+  result_4_letter = sorted(result_4_letter, key=lambda w: len(w), reverse=True)
   result_5_letter = sorted(result_5_letter, key=lambda w: len(w), reverse=True)
 
   col1, col2, col3 = st.columns(3)
@@ -86,7 +90,10 @@ if button:
     for word in result_5_letter:
       st.write(word.upper())
   with col2:
-    for word in result_3_letter:
+    for word in result_4_letter:
+      st.write(word.upper())
+  with col3:
+    for word in result_5_letter:
       st.write(word.upper())
   # for word in result:
       # print(word)
