@@ -72,6 +72,8 @@ if button  or letter_input:
             continue
           if can_spell(letters, word):
               result.append(word.lower())
+          if can_spell(letters, word) and len(word) == 6:
+              result_5_letter.append(word.lower())
           if can_spell(letters, word) and len(word) == 5:
               result_5_letter.append(word.lower())
           if can_spell(letters, word) and len(word) == 4:
