@@ -1,5 +1,5 @@
 import streamlit as st
-from PyMultiDictionary import DICT_WORDNET
+from PyMultiDictionary import MultiDictionary
 dictionary = MultiDictionary()
 
 
@@ -95,7 +95,7 @@ if button  or letter_input:
     for word in result_5_letter:
       st.write(word.upper())
       with st.popover("Get Synonym"):
-        dictionary.meaning('en', word.upper(), dictionary=DICT_WORDNET)
+        dictionary.meaning('en', word.upper())
   with col2:
     for word in result_4_letter:
       st.write(word.upper())
