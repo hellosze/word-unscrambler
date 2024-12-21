@@ -95,8 +95,7 @@ if button  or letter_input:
     for word in result_5_letter:
       st.write(word.upper())
       with st.popover("Get Synonym"):
-        dictionary.meaning(word.upper())
-        # st.markdown("Hello World 👋")
+        dictionary.meaning('en', word.upper(), dictionary=DICT_WORDNET)
   with col2:
     for word in result_4_letter:
       st.write(word.upper())
