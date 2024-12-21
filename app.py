@@ -1,5 +1,5 @@
 import streamlit as st
-from PyMultiDictionary import MultiDictionary
+from PyMultiDictionary import DICT_WORDNET
 dictionary = MultiDictionary()
 
 
