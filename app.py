@@ -94,9 +94,9 @@ if button  or letter_input:
   with col1:
     for word in result_5_letter:
       st.write(word.upper())
-      with st.popover("Get Synonym"):
-        meaning = dictionary.meaning('en', word.upper())
-        if meaning[2]:
+      word_meaning = dictionary.meaning('en', word.upper())
+      if word_meaning[2]:
+        with st.popover("Get Synonym"):
           st.write(meaning[2])
   with col2:
     for word in result_4_letter:
