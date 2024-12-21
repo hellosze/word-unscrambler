@@ -1,6 +1,7 @@
 import streamlit as st
-from PyDictionary import PyDictionary
-dictionary=PyDictionary()
+from PyMultiDictionary import MultiDictionary
+dictionary = MultiDictionary()
+
 
 st.title("Word Unscrambler")
 # input_slot = st.empty()
