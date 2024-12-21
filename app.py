@@ -93,10 +93,11 @@ if button  or letter_input:
 
   with col1:
     for word in result_5_letter:
-      st.write(word.upper())
+      # st.write(word.upper())
       word_meaning = dictionary.meaning('en', word.upper())
-      if word_meaning:
-        with st.popover("Get Synonym"):
+      if word_meaning[1] or word_meaning[2]:
+        st.write(word.upper())
+        with st.popover("Get Definition"):
           st.write(word_meaning)
   with col2:
     for word in result_4_letter:
