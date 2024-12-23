@@ -85,15 +85,15 @@ if button  or letter_input:
   result_4_letter = sorted(result_4_letter, key=lambda w: len(w), reverse=True)
   result_5_letter = sorted(result_5_letter, key=lambda w: len(w), reverse=True)
 
-  col1, col2, col3 = st.columns(3)
-
-  with col1:
+  # col1, col2, col3 = st.columns(3)
+  tab5, tab4, tab3 = st.tabs(["5-6 letter words" ,"4 letter words", "3 letter words"])
+  with tab5:
     for word in result_5_letter:
       st.write(word.upper())
-  with col2:
+  with tab4:
     for word in result_4_letter:
       st.write(word.upper())
-  with col3:
+  with tab3:
     for word in result_3_letter:
       st.write(word.upper())
  
