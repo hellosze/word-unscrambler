@@ -1,11 +1,7 @@
 import streamlit as st
-from PyMultiDictionary import MultiDictionary
-dictionary = MultiDictionary()
 
 
 st.title("Word Unscrambler")
-# input_slot = st.empty()
-# button_slot = st.empty()
 
 
 unscrambled_words = []
@@ -93,42 +89,14 @@ if button  or letter_input:
 
   with col1:
     for word in result_5_letter:
-      # st.write(word.upper())
-      word_meaning = dictionary.meaning('en', word.upper())
-      if word_meaning[1] or word_meaning[2]:
-        st.write(word.upper())
-        with st.popover("Get Definition"):
-          st.write(word_meaning)
+      st.write(word.upper())
   with col2:
     for word in result_4_letter:
-      # st.write(word.upper())
-      word_meaning = dictionary.meaning('en', word.upper())
-      if word_meaning[1] or word_meaning[2]:
-        st.write(word.upper())
-        with st.popover("Get Definition"):
-          st.write(word_meaning)
+      st.write(word.upper())
   with col3:
     for word in result_3_letter:
-      # st.write(word.upper())
-      word_meaning = dictionary.meaning('en', word.upper())
-      if word_meaning[1] or word_meaning[2]:
-        st.write(word.upper())
-        with st.popover("Get Definition"):
-          st.write(word_meaning)
-
-  # for word in result:
-      # print(word)
-      # st.write(word.upper())
-  # st.write(button)
-  # word_output = st.empty()
-  # word_output.text(unscrambled_words)  
-  # placeholder = st.empty()
-# words_state = st.text("Generating words")
-# words_state.text(""
-
-  
-# st.write("The current movie title is", title)
-
+      st.write(word.upper())
+ 
 #USE lowercase if using popular.txt or words.txt
 #USE caps if using scrabble.txt because source words are in caps
 
