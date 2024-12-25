@@ -106,7 +106,7 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-    \left\frac{\text{1}}{\text{2}}\right) =
+    \left\frac{1}{2}\right) =
     \left\frac{\text{2}}{\text{4}}\right) =
     \left\frac{\text{4}}{\text{8}}\right)
     ''')
