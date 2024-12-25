@@ -112,9 +112,9 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-    \3frac{1}{2} =
-    \3frac{2}{4} =
-    \3frac{4}{8}
+    3\frac{1}{2} =
+    3\frac{2}{4} =
+    3\frac{4}{8}
     ''')
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
