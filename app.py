@@ -107,7 +107,8 @@ st.latex(r'''
 
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
-numbers_array = numbers_input.split(",")
-for i in range(0, len(numbers_array), 2):
-    st.write(numbers_array[i:i + 2])
+if numbers_input:
+  numbers_array = numbers_input.split(",")
+  for i in range(0, len(numbers_array), 2):
+      st.write(numbers_array[i]*numbers_array[i+1])
 
