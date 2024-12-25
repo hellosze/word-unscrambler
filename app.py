@@ -107,7 +107,7 @@ st.latex(r'''
 
 st.latex(r'''
     \frac{1}{2} =
-    \frac{2}{\text{"___"}} =
+    \frac{2}{\text{Nirvana}} =
     \frac{4}{8}
     ''')
 
