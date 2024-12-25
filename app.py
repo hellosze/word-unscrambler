@@ -108,7 +108,6 @@ st.latex(r'''
 
 numbers_input = st.text_input("Enter First In Math Numbers", "")
 numbers_array = numbers_input.split(",")
-"""Yield successive n-sized chunks from lst."""
 for i in range(0, len(numbers_array), 2):
-    st.write(numbers_array[i:i + 2].join("*"))
+    st.write(numbers_array[i:i + 2])
 
