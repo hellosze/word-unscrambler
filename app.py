@@ -106,9 +106,9 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-    \left\frac{1}{2}\right) =
-    \left\frac{\text{2}}{\text{4}}\right) =
-    \left\frac{\text{4}}{\text{8}}\right)
+    \frac{1}{2} =
+    \frac{2}{4} =
+    \frac{4}{8}
     ''')
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
