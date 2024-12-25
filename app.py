@@ -113,7 +113,7 @@ st.latex(r'''
 
 st.latex(r'''
     3\frac{1}{2} =
-    3\frac{2}{4} =
+    3\frac{}{4} =
     3\frac{4}{}
     ''')
 
