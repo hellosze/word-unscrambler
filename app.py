@@ -107,8 +107,14 @@ st.latex(r'''
 
 st.latex(r'''
     \frac{1}{2} =
-    \frac{2}{\text{Nirvana}} =
+    \frac{2}{4} =
     \frac{4}{8}
+    ''')
+
+st.latex(r'''
+    \3frac{1}{2} =
+    \3frac{2}{4} =
+    \3frac{4}{8}
     ''')
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
