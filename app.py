@@ -107,7 +107,7 @@ st.latex(r'''
 
 st.latex(r'''
     \frac{1}{2} =
-    \frac{2}{4} =
+    \frac{2}{\text{___}} =
     \frac{4}{8}
     ''')
 
