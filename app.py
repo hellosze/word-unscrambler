@@ -108,8 +108,7 @@ st.latex(r'''
 st.latex(r'''
     \left\frac{\text{1}}{\text{2}}\right) =
     \left\frac{\text{2}}{\text{4}}\right) =
-    \left\frac{\text{4}}{\text{8}}\right) =
-    \left(\frac{\text{Impressions}}{\text{Total Code Served}}\right)
+    \left\frac{\text{4}}{\text{8}}\right)
     ''')
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
