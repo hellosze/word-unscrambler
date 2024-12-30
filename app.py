@@ -167,6 +167,13 @@ st.latex(r'''
       \end{align*}
     ''')
 
+st.latex(r'''
+      \begin{align*} 
+         9  \\ 
+       \div 3  \\
+      \overline { 3 }
+      \end{align*}
+    ''')
 
 
 st.latex(r'''
