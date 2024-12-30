@@ -151,6 +151,14 @@ st.latex(r'''
       \end{align*}
     ''')
 
+st.latex(r'''
+      \begin{align*} 
+        8 \\ 
+      + 3
+      \overline
+      \end{align*}
+    ''')
+
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
   numbers_array = numbers_input.split(",")
