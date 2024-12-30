@@ -133,18 +133,11 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-\begin{array}{
-  c % the operation symbol
-  r % the numbers
-  @{\,}% the separation
-  l % the units
-}
-  &  1123 & \unit{\gram\per\hour} \\
-+ &    10 & \unit{\gram\per\hour} \\
-+ & 63112 & \unit{\gram\per\hour} \\
-\cmidrule{2-3}
-  & 64245 & \unit{\gram\per\hour}
-\end{array}
+      \begin{array}
+        &  1123 & \unit{\gram\per\hour} \\
+      + &    10 & \unit{\gram\per\hour} \\
+      + & 63112 & \unit{\gram\per\hour} \\
+      \end{array}
     ''')
 
 
