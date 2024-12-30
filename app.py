@@ -154,8 +154,7 @@ st.latex(r'''
 st.latex(r'''
       \begin{align*} 
         8 \\ 
-      + 3
-      \overline
+      + 3 \\
       \end{align*}
     ''')
 
