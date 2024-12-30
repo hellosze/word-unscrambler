@@ -162,7 +162,7 @@ st.latex(r'''
 st.latex(r'''
       \begin{align*} 
          8  \\ 
-       x 3  \\
+       \times 3  \\
       \overline { 24 }
       \end{align*}
     ''')
