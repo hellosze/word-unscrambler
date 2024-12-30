@@ -144,6 +144,12 @@ x_{1} = \frac{A-A_{0}}{\frac{1}{2}\cdot \left( A_{\mathrm{A}} - A_{\mathrm{a}} \
 \qquad
     ''')
 
+st.latex(r'''
+      \begin{align*} 
+      2x - 5y &=  8 \\ 
+      3x + 9y &=  -12
+      \end{align*}
+    ''')
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
