@@ -161,6 +161,16 @@ st.latex(r'''
 
 st.latex(r'''
       \begin{align*} 
+         8  \\ 
+       x 3  \\
+      \overline { 24 }
+      \end{align*}
+    ''')
+
+
+
+st.latex(r'''
+      \begin{align*} 
          1088  \\ 
        +  203  \\
       \overline { 1291 }
