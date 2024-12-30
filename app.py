@@ -124,7 +124,14 @@ st.latex(r'''
 st.latex(r'''
       \sqrt{x^2+1}
     ''')
-  
+
+st.latex(r'''
+      \begin{pmatrix}
+         a & b \\
+         c & d
+      \end{pmatrix}
+    ''')
+
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
   numbers_array = numbers_input.split(",")
