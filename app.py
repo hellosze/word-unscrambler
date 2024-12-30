@@ -118,10 +118,8 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-    {align*}
-    x + y &= 5 \\ 
-    2x - y &= 3 
-    {align*}
+    3\le5
+    3\le{5}
     ''')
 
 st.latex(r'''
