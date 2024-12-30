@@ -117,6 +117,13 @@ st.latex(r'''
     3\frac{4}{}
     ''')
 
+st.latex(r'''
+    {align*}
+    x + y &= 5 \\ 
+    2x - y &= 3 
+    {align*}
+    ''')
+  
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
   numbers_array = numbers_input.split(",")
