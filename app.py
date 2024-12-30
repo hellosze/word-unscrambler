@@ -123,6 +123,10 @@ st.latex(r'''
     2x - y &= 3 
     {align*}
     ''')
+
+st.latex(r'''
+      sqrt{x^2+1}
+    ''')
   
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
