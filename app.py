@@ -139,6 +139,11 @@ st.latex(r'''
       \end{array}
     ''')
 
+st.latex(r'''
+x_{1} = \frac{A-A_{0}}{\frac{1}{2}\cdot \left( A_{\mathrm{A}} - A_{\mathrm{a}} \right)}
+\qquad
+    ''')
+
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
