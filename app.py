@@ -132,6 +132,22 @@ st.latex(r'''
       \end{pmatrix}
     ''')
 
+st.latex(r'''
+\begin{array}{
+  c % the operation symbol
+  r % the numbers
+  @{\,}% the separation
+  l % the units
+}
+  &  1123 & \unit{\gram\per\hour} \\
++ &    10 & \unit{\gram\per\hour} \\
++ & 63112 & \unit{\gram\per\hour} \\
+\cmidrule{2-3}
+  & 64245 & \unit{\gram\per\hour}
+\end{array}
+    ''')
+
+
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
   numbers_array = numbers_input.split(",")
