@@ -118,8 +118,7 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-    3\le5
-    3\le{5}
+    3\le 5 \le 7
     ''')
 
 st.latex(r'''
