@@ -153,8 +153,8 @@ st.latex(r'''
 
 st.latex(r'''
       \begin{align*} 
-        8 \\ 
-      + 3 \\
+         8  \\ 
+       + 3  \\
       \overline { 11 }
       \end{align*}
     ''')
