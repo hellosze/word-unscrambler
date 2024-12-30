@@ -134,9 +134,8 @@ st.latex(r'''
 
 st.latex(r'''
       \begin{array}
-        &  1123 & \unit{\gram\per\hour} \\
-      + &    10 & \unit{\gram\per\hour} \\
-      + & 63112 & \unit{\gram\per\hour} \\
+        &  1123 \\
+      + &    10 \\
       \end{array}
     ''')
 
