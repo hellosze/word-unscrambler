@@ -205,8 +205,8 @@ st.latex(r'''
       refers to the suite of commands (\TeX{} macros) which form the markup 
       conventions used to typeset \LaTeX{} documents."
       \end{center}
-
       ''')
+
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
   numbers_array = numbers_input.split(",")
