@@ -194,7 +194,7 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-      \begin{center}
+      \begin{center*}
       Example 1: The following paragraph (given in quotes) is an 
       example of centred alignment using the center environment. 
       
@@ -204,7 +204,7 @@ st.latex(r'''
       \LaTeX{} is not the name of a particular (executable) typesetting program, but 
       refers to the suite of commands (\TeX{} macros) which form the markup 
       conventions used to typeset \LaTeX{} documents."
-      \end{center}
+      \end{center*}
       ''')
 
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
