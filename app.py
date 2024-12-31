@@ -183,6 +183,7 @@ st.latex(r'''
       \end{align*}
     ''')
 
+st.write('This is an example of an elementary, grade school, primary school math expression')
 
 st.latex(r'''
       \begin{align*} 
