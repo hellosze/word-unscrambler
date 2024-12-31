@@ -169,6 +169,14 @@ st.latex(r'''
 
 st.latex(r'''
       \begin{align*} 
+         8  \\ 
+       \cdot 3  \\
+      \overline { 24 }
+      \end{align*}
+    ''')
+
+st.latex(r'''
+      \begin{align*} 
          9  \\ 
        \div 3  \\
       \overline { 3 }
