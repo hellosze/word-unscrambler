@@ -194,7 +194,6 @@ st.latex(r'''
     ''')
 
 st.latex(r'''
-
       \begin{center}
       Example 1: The following paragraph (given in quotes) is an 
       example of centred alignment using the center environment. 
