@@ -193,6 +193,21 @@ st.latex(r'''
       \end{align*}
     ''')
 
+st.latex(r'''
+
+      \begin{center}
+      Example 1: The following paragraph (given in quotes) is an 
+      example of centred alignment using the center environment. 
+      
+      ``La\TeX{} is a document preparation system and document markup 
+      language. \LaTeX{} uses the \TeX{} typesetting program for formatting 
+      its output, and is itself written in the \TeX{} macro language. 
+      \LaTeX{} is not the name of a particular (executable) typesetting program, but 
+      refers to the suite of commands (\TeX{} macros) which form the markup 
+      conventions used to typeset \LaTeX{} documents."
+      \end{center}
+
+      ''')
 numbers_input = st.text_input("Enter First In Math Numbers", "1,2,3,4,5,6")
 if numbers_input:
   numbers_array = numbers_input.split(",")
