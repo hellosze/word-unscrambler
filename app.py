@@ -61,6 +61,7 @@ if button  or letter_input:
   letters = st.session_state.widget.upper()
 
   result = []
+  result_6_letter = []
   result_5_letter = []
   result_4_letter = []
   result_3_letter = []
@@ -72,7 +73,7 @@ if button  or letter_input:
           if can_spell(letters, word):
               result.append(word.lower())
           if can_spell(letters, word) and len(word) == 6:
-              result_5_letter.append(word.lower())
+              result_6_letter.append(word.lower())
           if can_spell(letters, word) and len(word) == 5:
               result_5_letter.append(word.lower())
           if can_spell(letters, word) and len(word) == 4:
@@ -84,9 +85,13 @@ if button  or letter_input:
   result_3_letter = sorted(result_3_letter, key=lambda w: len(w), reverse=True)
   result_4_letter = sorted(result_4_letter, key=lambda w: len(w), reverse=True)
   result_5_letter = sorted(result_5_letter, key=lambda w: len(w), reverse=True)
+  result_6_letter = sorted(result_6_letter, key=lambda w: len(w), reverse=True)
 
   # col1, col2, col3 = st.columns(3)
-  tab5, tab4, tab3 = st.tabs(["5-6 letter words" ,"4 letter words", "3 letter words"])
+  tab6, tab5, tab4, tab3 = st.tabs(["6 letters", "5 letters" ,"4 letters", "3 letters"])
+  with tab6:
+    for word in result_6_letter:
+      st.write(word.upper())
   with tab5:
     for word in result_5_letter:
       st.write(word.upper())
