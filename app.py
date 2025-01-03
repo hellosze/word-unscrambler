@@ -93,11 +93,16 @@ if button  or letter_input:
     for word in result_6_letter:
       st.write(word.upper())
   with tab5:
-    for word in result_5_letter:
-      st.write(word.upper())
+    uppercase_5 = [s.upper() for s in result_5_letter]
+    st.write("     ".join(uppercase_5))
+    # for word in result_5_letter:
+    #   st.write(word.upper())
   with tab4:
-    for word in result_4_letter:
-      st.write(word.upper())
+    uppercase_4 = [s.upper() for s in result_4_letter]
+    st.write("     ".join(uppercase_4))
+
+    # for word in result_4_letter:
+    #   st.write(word.upper())
   with tab3:
     uppercase_3 = [s.upper() for s in result_3_letter]
     st.write("     ".join(uppercase_3))
