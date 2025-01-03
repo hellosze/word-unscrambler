@@ -99,7 +99,8 @@ if button  or letter_input:
     for word in result_4_letter:
       st.write(word.upper())
   with tab3:
-    st.write("     ".join(result_3_letter))
+    uppercase_3 = s.upper() for s in result_3_letter
+    st.write("     ".join(uppercase_3))
     # for word in result_3_letter:
       # st.write(word.upper())
  
