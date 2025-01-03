@@ -99,8 +99,9 @@ if button  or letter_input:
     for word in result_4_letter:
       st.write(word.upper())
   with tab3:
-    for word in result_3_letter:
-      st.write(word.upper())
+    st.write(result_3_letter.join("     "))
+    # for word in result_3_letter:
+      # st.write(word.upper())
  
 #USE lowercase if using popular.txt or words.txt
 #USE caps if using scrabble.txt because source words are in caps
